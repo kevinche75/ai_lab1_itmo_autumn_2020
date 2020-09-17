@@ -68,4 +68,3 @@ uncle(X, Y) :- male(X), parent_sibling(X, Y).
 aunt(X, Y) :- female(X), parent_sibling(X, Y).
 son(X, Y) :- male(X), parent(Y, X).
 daughter(X, Y) :- female(X), parent(Y, X).
-cousin(X, Y) :- parent_sibling(X, Z), parent(Z, Y).
